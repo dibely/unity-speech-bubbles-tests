@@ -14,10 +14,11 @@ public class Thoughts : MonoBehaviour {
     private int messageIndex = 0;
 
     private void Awake() {
-        thoughts = new string[3];
-        thoughts[0] = "<sprite=1>";
-        thoughts[1] = "<sprite=4>";
-        thoughts[2] = "<sprite=7>";
+        thoughts = new string[4];
+        thoughts[0] = "<size=8><sprite=0></size>";
+        thoughts[1] = "<size=8><sprite=1></size>";
+        thoughts[2] = "<size=8><sprite=1><sprite=1><sprite=2></size>";
+        thoughts[3] = "<size=8><sprite=3></size><voffset=0.5em>x10</voffset>";
     }
 
     void Update() {
